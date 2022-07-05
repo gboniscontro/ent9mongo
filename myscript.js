@@ -46,6 +46,8 @@ db.productos.updateMany({}, { $set: { "stock": 100 } });
 db.productos.updateMany({ "price": { $gt: 4000 } }, { $set: { "stock": 0 } });
 db.productos.deleteMany({ "price": { $lt: 1000 } });
 
+
+
 db = connect('mongodb://localhost/admin');
 
 db.createUser(
